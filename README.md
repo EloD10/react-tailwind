@@ -4,7 +4,7 @@
 yarn install && yarn start
 ```
 
-## Add localisation
+## Internationalization
 
 Process explain here:
 https://lingui.js.org/tutorials/react.html
