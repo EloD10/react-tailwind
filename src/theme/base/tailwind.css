@@ -1,0 +1,14 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+/**
+* Custom CSS here
+*/
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.transition {
+    transition: all .1s ease-in;
+}

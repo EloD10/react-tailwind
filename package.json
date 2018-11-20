@@ -1,0 +1,43 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@lingui/react": "^2.7.2",
+    "@reach/router": "^1.2.1",
+    "global": "^4.3.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-emotion": "^9.2.12",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "yarn build:css && react-scripts start",
+    "build": "yarn compile:i18n && yarn build:css && react-scripts build",
+    "format": "prettier --write \"src/**/*.{js,jsx,html,json}\"",
+    "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,html,json}\"",
+    "lint": "eslint src/",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss build src/theme/base/tailwind.css --output src/theme/base/output.css",
+    "add-locale:i18n": "lingui add-locale",
+    "extract:i18n": "lingui extract",
+    "compile:i18n": "lingui compile"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@lingui/cli": "^2.7.2",
+    "@lingui/macro": "^2.7.2",
+    "autoprefixer": "^9.3.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "postcss-cli": "^6.0.1",
+    "prettier": "^1.15.2",
+    "tailwindcss": "^0.7.2"
+  }
+}
