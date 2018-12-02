@@ -12,7 +12,7 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "yarn build:css && react-scripts start",
+    "start": "yarn compile:i18n && yarn build:css && react-scripts start",
     "build": "yarn compile:i18n && yarn build:css && react-scripts build",
     "format": "prettier --write \"src/**/*.{js,jsx,html,json}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,html,json}\"",
@@ -32,6 +32,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@fullhuman/postcss-purgecss": "^1.1.0",
     "@lingui/cli": "^2.7.2",
     "@lingui/macro": "^2.7.2",
     "autoprefixer": "^9.3.1",
